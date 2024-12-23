@@ -41,9 +41,9 @@ const ContactForm = () => {
 
   return (
     <div className='flex items-center justify-center'>
-      <form onSubmit={handleSubmit} className='w-6/12 my-10 p-5'>
+      <form onSubmit={handleSubmit} className='w-full md:w-6/12 mb-10 p-5'>
         <div className="flex items-center justify-center gap-3 mb-4">
-          <div className='w-1/2'>
+          <div className=' md:w-1/2'>
             {/* <label htmlFor="firstname">First Name:</label> */}
             <input
               type="text"
@@ -117,9 +117,11 @@ const ContactForm = () => {
         </div>
 
         {/* <button type="submit">Submit</button> */}
-        <Button text={`Submit`} className={"w-36  bg-theme text-white "} />
-      </form >
-    </div >
+        <Button text={`Submit`} className="w-36  bg-theme text-white hover:bg-white hover:text-theme transition-all duration-200" />
+
+
+      </form>
+    </div>
   );
 };
 
