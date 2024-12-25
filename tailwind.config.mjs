@@ -9,9 +9,9 @@ export default {
     extend: {
       colors: {
        
-        background: "#a49d95",
+        // background: "#a49d95",
         // background: "#f4e7e3  ",
-        theme: "#720c2b",
+        theme: "#56071f",
       },
       borderWidth: {
         '1': '1px',
