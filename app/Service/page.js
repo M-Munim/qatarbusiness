@@ -34,7 +34,8 @@ const page = () => {
 
         {/* Right Section */}
         <div className="w-full sm:w-4/12 lg:w-3/12 flex items-center justify-center ">
-          <Image src="/united-states.png" alt="logo" width={100} height={100} className="w-48 h-40" />
+          {/* <Image src="/united-states.png" alt="logo" width={100} height={100} className="w-48 h-40" /> */}
+          <img src="/united-states.png" alt="" />
         </div>
       </section>
 
