@@ -43,7 +43,7 @@ export default function ServiceCard({ cards }) {
             className="w-20 h-20 mx-auto"
           />
           <h2 className="text-xl font-bold text-center my-2 leading-5">{card.title}</h2>
-          <p className="text-center leading-4 text-sm">{card.description}</p>
+          <p className="text-center text-xs leading-4 popins">{card.description}</p>
         </div>
       ))}
     </div>

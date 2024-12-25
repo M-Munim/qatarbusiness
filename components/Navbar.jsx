@@ -278,16 +278,16 @@ const Navbar = () => {
       <nav className="flex justify-between items-center h-20 px-4">
         <div className="w-2/12">
           <Link href="/">
-            <Image src="/Logo.png" alt="logo" width={100} height={100} className="w-40 h-16" />
+            <Image src="/Logo.png" alt="logo" width={100} height={100} className="w-44 h-16" />
           </Link>
         </div>
 
-        <div className="w-4/12 lg:w-6/12 hidden lg:flex lg:items-center lg:justify-center">
-          <h1 className="lg:text-xl">Empowering Your Financial Success Globally</h1>
+        <div className="sm:8/12 lg:7/12 xl:w-5/12 md:hidden lg:flex lg:items-center lg:justify-start">
+          <h1 className="text-base  lg:text-2xl">Empowering Your Financial Success Globally</h1>
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-4 w-6/12 lg:w-4/12">
+        <div className="hidden md:flex text-xl items-center gap-3 w-6/12 lg:w-5/12">
           <Link
             href="/"
             className={`hover:text-white transition-all duration-200 ${isActive('/') ? 'text-white' : ''
@@ -323,6 +323,11 @@ const Navbar = () => {
           >
             Contact
           </Link>
+
+          <div className=" items-center justify-center gap-3 ml-5 hidden xl:flex">
+            <button className='px-2 h-8 bg-white text-sm'>Text here</button>
+            <button className='px-2 h-8 bg-white text-sm'>Text here</button>
+          </div>
         </div>
 
         {/* Hamburger Icon */}

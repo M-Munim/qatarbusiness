@@ -37,4 +37,27 @@ const cardsData = [
   },
 ];
 
+// data.js
+export const testimonials = [
+  {
+    name: "John Doe",
+    title: "CEO, Example Corp",
+    quote: "This service has completely transformed the way we work. Highly recommend!",
+    image: "/testimonialImg.svg", // Replace with an actual image path
+  },
+  {
+    name: "Jane Smith",
+    title: "Marketing Head, Startup Inc.",
+    quote: "Fantastic experience! The team was incredibly professional and helpful.",
+    image: "/testimonialImg.svg",
+  },
+  {
+    name: "Michael Brown",
+    title: "Freelancer",
+    quote: "An absolute game-changer for my freelance business!",
+    image: "/testimonialImg.svg",
+  },
+];
+
+
 export default cardsData;

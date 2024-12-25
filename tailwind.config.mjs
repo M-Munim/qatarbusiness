@@ -8,9 +8,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#9b948a",
-        foreground: "var(--foreground)",
-        theme: "#8b133e",
+       
+        // background: "#a49d95",
+        background: "#f4e7e3  ",
+        theme: "#720c2b",
       },
       borderWidth: {
         '1': '1px',
