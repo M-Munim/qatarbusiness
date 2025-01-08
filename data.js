@@ -57,6 +57,22 @@ export const testimonials = [
     quote: "An absolute game-changer for my freelance business!",
     image: "/testimonialImg.svg",
   },
+  {
+    name: "Michael Brown",
+    title: "Freelancer",
+    quote: "An absolute game-changer for my freelance business!",
+    image: "/testimonialImg.svg",
+  },{
+    name: "Michael Brown",
+    title: "Freelancer",
+    quote: "An absolute game-changer for my freelance business!",
+    image: "/testimonialImg.svg",
+  },{
+    name: "Michael Brown",
+    title: "Freelancer",
+    quote: "An absolute game-changer for my freelance business!",
+    image: "/testimonialImg.svg",
+  },
 ];
 
 

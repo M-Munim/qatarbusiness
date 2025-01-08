@@ -37,7 +37,7 @@ const page = () => {
 
       <section className="w-full h-auto lg:h-[600px] flex flex-wrap items-start justify-between px-4 relative">   
         <div className="w-full sm:w-4/12 lg:w-4/12 flex items-start justify-center flex-col px-5 relative z-10 top-1/3">
-          <h2 className="text-lg lg:text-4xl font-bold mb-1 text-center sm:text-left">
+          <h2 className="text-lg lg:text-5xl font-bold mb-1 text-center sm:text-left">
             Empowering Your Financial Success Globally
           </h2>
           <p className="text-xs mb-5 text-center sm:text-left popins leading-tight">

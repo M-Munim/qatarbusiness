@@ -9,7 +9,8 @@ import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname(); // Use `usePathname` instead of `useRouter`
+  const pathname = usePathname(); 
+  
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
