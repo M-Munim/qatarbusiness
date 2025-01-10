@@ -42,28 +42,28 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            href="/Service"
+            href="#"
             className={`hover:text-maroon text-[#170F49] transition-all duration-200 ${isActive('/Service') ? 'text-maroon font-semibold' : ''
               }`}
           >
             Services
           </Link>
           <Link
-            href="/About"
+            href="#"
             className={`hover:text-maroon text-[#170F49] transition-all duration-200 ${isActive('/About') ? 'text-maroon font-semibold' : 'font-normal'
               }`}
           >
             About
           </Link>
           <Link
-            href="/Insights"
+            href="#"
             className={`hover:text-maroon text-[#170F49] transition-all duration-200 ${isActive('/Insights') ? 'text-maroon font-semibold' : ''
               }`}
           >
             Insights
           </Link>
           <Link
-            href="/Contact"
+            href="#"
             className={`hover:text-maroon text-[#170F49] transition-all duration-200 ${isActive('/Contact') ? 'text-white font-semibold' : ''
               }`}
           >
