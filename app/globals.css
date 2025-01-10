@@ -1,18 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: "Playfair", serif;
-  color: #56071f;
-  background-color: #a39c92;
-  /* background-color: rgba(108, 103, 96, 1); */
-  
+  font-family: "DM Sans", serif;
+
 }
 
-.popins{
-  font-family: "Poppins", serif;
+/* Container for pagination dots */
+.swiper-pagination {
+  bottom: 20px;
+  /* Adjust the position */
+  margin-top: 300px;
+}
+
+/* Default state of pagination dots */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #8A1538 !important;
+  
+  opacity: 1;
+  /* Ensure full visibility */
+  border-radius: 50%;
+  margin: 0 8px;
+  /* Spacing between dots */
+  transition: all 0.3s ease;
+}
+
+/* Active pagination dot */
+.swiper-pagination-bullet-active {
+  background-color: #8A1538 !important; 
+  /* Custom active color */
+  transform: scale(1.2);
+  /* Slightly enlarge the active dot */
+  box-shadow: 0 0 10px rgba(139, 27, 45, 0.5);
+  /* Glow effect */
 }

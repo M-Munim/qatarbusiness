@@ -6,11 +6,12 @@ import React, { useState } from 'react';
 import { RxCross2 } from "react-icons/rx";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { usePathname } from 'next/navigation';
+import Button from './Button';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname(); 
-  
+  const pathname = usePathname();
+
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -19,59 +20,58 @@ const Navbar = () => {
   const isActive = (path) => pathname === path;
 
   return (
-    <header className="relative font-medium">
-      <nav className="flex justify-between items-center h-20 px-4">
+    <header className="relative font-medium bg-white">
+      <nav className="flex justify-between items-center h-28 px-14">
         <div className="w-2/12">
           <Link href="/">
             <Image src="/Logo.png" alt="logo" width={100} height={100} className="w-44 h-16" />
           </Link>
         </div>
 
-        <div className="sm:8/12 lg:7/12 xl:w-5/12 md:hidden lg:flex lg:items-center lg:justify-start">
+        {/* <div className="sm:8/12 lg:7/12 xl:w-5/12 md:hidden lg:flex lg:items-center lg:justify-start">
           <h1 className="text-base  lg:text-2xl">Empowering Your Financial Success Globally</h1>
-        </div>
+        </div> */}
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex text-xl items-center gap-3 w-6/12 lg:w-5/12">
+        <div className="hidden md:flex text-lg items-center gap-7 w-6/12 lg:w-5/12">
           <Link
             href="/"
-            className={`hover:text-white transition-all duration-200 ${isActive('/') ? 'text-white' : ''
+            className={`hover:text-maroon text-[#170F49] transition-all duration-200 ${isActive('/') ? 'text-maroon font-semibold' : ''
               }`}
           >
             Home
           </Link>
           <Link
             href="/Service"
-            className={`hover:text-white transition-all duration-200 ${isActive('/Service') ? 'text-white' : ''
+            className={`hover:text-maroon text-[#170F49] transition-all duration-200 ${isActive('/Service') ? 'text-maroon font-semibold' : ''
               }`}
           >
             Services
           </Link>
           <Link
             href="/About"
-            className={`hover:text-white transition-all duration-200 ${isActive('/About') ? 'text-white' : ''
+            className={`hover:text-maroon text-[#170F49] transition-all duration-200 ${isActive('/About') ? 'text-maroon font-semibold' : 'font-normal'
               }`}
           >
             About
           </Link>
           <Link
             href="/Insights"
-            className={`hover:text-white transition-all duration-200 ${isActive('/Insights') ? 'text-white' : ''
+            className={`hover:text-maroon text-[#170F49] transition-all duration-200 ${isActive('/Insights') ? 'text-maroon font-semibold' : ''
               }`}
           >
             Insights
           </Link>
           <Link
             href="/Contact"
-            className={`hover:text-white transition-all duration-200 ${isActive('/Contact') ? 'text-white' : ''
+            className={`hover:text-maroon text-[#170F49] transition-all duration-200 ${isActive('/Contact') ? 'text-white font-semibold' : ''
               }`}
           >
-            Contact
+            Contact Us
           </Link>
 
           <div className=" items-center justify-center gap-3 ml-5 hidden xl:flex">
-            <button className='px-2 h-8 bg-white text-sm'>Text here</button>
-            <button className='px-2 h-8 bg-white text-sm'>Text here</button>
+            <Button text="Get Started" className="w-36 h-14 text-base font-bold bg-maroon text-white mx-auto sm:mx-0" />
           </div>
         </div>
 
@@ -120,7 +120,7 @@ const Navbar = () => {
               onClick={toggleMenu}
               className={`${isActive('/Contact') ? 'text-yellow-500' : ''}`}
             >
-              Contact
+              Contact Us
             </Link>
           </div>
         </div>

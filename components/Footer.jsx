@@ -1,161 +1,102 @@
-// "use client";
-
-// import Link from 'next/link'
-// import React from 'react'
-// import { usePathname } from 'next/navigation';
-// import Image from "next/image";
-
-// const Footer = () => {
-//   const pathname = usePathname();
-//   const isActive = (path) => pathname === path;
-
-//   return (
-//     <footer className='h-44 bg-theme px-10 flex items-center flex-col gap-2'>
-//       <div className='flex items-center justify-between w-full mt-3'>
-//         <div className='w-3/12'>
-//           <Link href="/">
-//             <Image src="/Logo.png" alt="logo" width={100} height={100} className="w-44 h-16" />
-//           </Link>
-//         </div>
-
-//         <div className='w-6/12'>
-//           <center className='mb-1'>
-//             <h2 className='text-white text-2xl'>Useful Links</h2>
-//           </center>
-
-//           <div className='flex items-center justify-center gap-3 text-lg'>
-//             <Link
-//               href="/"
-//               className={`hover:text-white transition-all duration-200 text-gray-200 ${isActive('/') ? 'text-white' : ''
-//                 }`}
-//             >
-//               Home
-//             </Link>
-//             <Link
-//               href="/Service"
-//               className={`hover:text-white transition-all duration-200 text-gray-200 ${isActive('/Service') ? 'text-white' : ''
-//                 }`}
-//             >
-//               Services
-//             </Link>
-//             <Link
-//               href="/About"
-//               className={`hover:text-white transition-all duration-200 text-gray-200 ${isActive('/About') ? 'text-white' : ''
-//                 }`}
-//             >
-//               About
-//             </Link>
-//             <Link
-//               href="/Insights"
-//               className={`hover:text-white transition-all duration-200 text-gray-200 ${isActive('/Insights') ? 'text-white' : ''
-//                 }`}
-//             >
-//               Insights
-//             </Link>
-//             <Link
-//               href="/Contact"
-//               className={`hover:text-white transition-all duration-200 text-gray-200 ${isActive('/Contact') ? 'text-white' : ''
-//                 }`}
-//             >
-//               Contact
-//             </Link>
-//           </div>
-//         </div>
-
-//         <div className='w-3/12 flex items-center justify-center'>
-//           {/* width="600" height="450" style="border:0;"  */}
-//           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13231.590117800703!2d71.4655563!3d33.9951657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1736312264817!5m2!1sen!2s" style={{ width: "200px", height: "120px", border: "0px" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-//         </div>.
-//       </div>
-
-//       <center className='text-white text-2xl'>© 2024 FinSecure. All rights reserved.</center>
-//     </footer>
-//   )
-// }
-
-// export default Footer
-
-
-
-
 "use client";
 
 import Link from 'next/link';
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import Image from "next/image";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaRegEnvelope } from "react-icons/fa6";
+import { FiPhone } from "react-icons/fi";
+import { IoLocationOutline } from "react-icons/io5";
 
 const Footer = () => {
-  const pathname = usePathname();
-  const isActive = (path) => pathname === path;
 
   return (
-    <footer className='bg-theme px-5 py-8 flex flex-col gap-6'>
-      <div className='flex flex-col md:flex-row items-center justify-between w-full gap-6'>
-        {/* Logo Section */}
-        <div className='w-full md:w-3/12 flex justify-center md:justify-start'>
+    <footer className='bg-white py-8 flex flex-col gap-6'>
+      <div className='border-y-1 border-[#DDDDDD] flex items-start justify-center p-16'>
+        <div className='w-3/12'>
           <Link href="/">
-            <Image
-              src="/Logo.png"
-              alt="logo"
-              width={100}
-              height={100}
-              className="w-32 h-12 md:w-44 md:h-16"
-            />
+            <Image src="/Logo.png" alt="logo" width={100} height={100} className="w-44 h-16" />
           </Link>
-        </div>
-
-        {/* Links Section */}
-        <div className='w-full md:w-6/12 text-center'>
-          <h2 className='text-white text-xl md:text-2xl mb-2'>Useful Links</h2>
-          <div className='flex flex-wrap items-center justify-center gap-4 text-sm md:text-lg'>
-            <Link
-              href="/"
-              className={`hover:text-white transition-all duration-200 text-gray-200 ${isActive('/') ? 'text-white' : ''}`}
-            >
-              Home
-            </Link>
-            <Link
-              href="/Service"
-              className={`hover:text-white transition-all duration-200 text-gray-200 ${isActive('/Service') ? 'text-white' : ''}`}
-            >
-              Services
-            </Link>
-            <Link
-              href="/About"
-              className={`hover:text-white transition-all duration-200 text-gray-200 ${isActive('/About') ? 'text-white' : ''}`}
-            >
-              About
-            </Link>
-            <Link
-              href="/Insights"
-              className={`hover:text-white transition-all duration-200 text-gray-200 ${isActive('/Insights') ? 'text-white' : ''}`}
-            >
-              Insights
-            </Link>
-            <Link
-              href="/Contact"
-              className={`hover:text-white transition-all duration-200 text-gray-200 ${isActive('/Contact') ? 'text-white' : ''}`}
-            >
-              Contact
-            </Link>
+          <p className='text-[#6F6C90] text-lg mt-5'>Lorem ipsum dolor sit amet <br /> consectetur adipiscing elit aliquam</p>
+          <div className='flex items-center justify-start gap-4 mt-5 text-maroon text-lg'>
+            <FaFacebookF />
+            <FaTwitter />
+            <RiInstagramFill />
+            <FaLinkedinIn />
+            <FaYoutube />
           </div>
         </div>
 
-        {/* Map Section */}
-        <div className='w-full md:w-3/12 flex justify-center'>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13231.590117800703!2d71.4655563!3d33.9951657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1736312264817!5m2!1sen!2s"
-            style={{ width: "100%", maxWidth: "200px", height: "120px", border: "0px" }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div className='w-2/12'>
+          <p className='mb-6 text-[#170F49] font-bold text-xl'>Product</p>
+          <div className='flex items-start justify-center flex-col text-[#6F6C90] text-lg gap-2'>
+            <Link href="/about">Features</Link>
+            <Link href="/about">Pricing</Link>
+            <Link href="/about">Case studies</Link>
+            <Link href="/about">Reviews</Link>
+            <Link href="/about">Updates</Link>
+          </div>
+        </div>
+
+        <div className='w-2/12'>
+          <p className='mb-6 text-[#170F49] font-bold text-xl'>Company</p>
+          <div className='flex items-start justify-center flex-col text-[#6F6C90] text-lg gap-2'>
+            <Link href="/about">Home</Link>
+            <Link href="/about">Services</Link>
+            <Link href="/about">About</Link>
+            <Link href="/about">Insights</Link>
+            <Link href="/about">Contact Us</Link>
+          </div>
+        </div>
+
+        <div className='w-2/12'>
+          <p className='mb-6 text-[#170F49] font-bold text-xl'>Support</p>
+          <div className='flex items-start justify-center flex-col text-[#6F6C90] text-lg gap-2'>
+            <Link href="/">Getting Started</Link>
+            <Link href="/">Help Center</Link>
+            <Link href="/">Service status</Link>
+            <Link href="/">Report a bug</Link>
+            <Link href="/">Chat Support</Link>
+          </div>
+        </div>
+
+        <div className='w-3/12'>
+          <p className='mb-6 text-[#170F49] font-bold text-xl'>Contacts us</p>
+          <div className='flex items-start justify-center flex-col text-[#6F6C90] text-lg gap-2'>
+            <div className='flex items-center gap-2'>
+              {/* icons */}
+              <FaRegEnvelope />
+              <p className=''>contact@company.com</p>
+            </div>
+
+            <div className='flex items-center gap-2'>
+              {/* icons */}
+              <FiPhone />
+              <p className=''>123-456-789-88</p>
+            </div>
+
+            <div className='flex items-center gap-2'>
+              {/* icons */}
+              <IoLocationOutline />
+              <p className=''>Street 123, 25000, Peshawar, Pakistan</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Footer Bottom Text */}
-      <center className='text-white text-sm md:text-xl'>© 2024 FinSecure. All rights reserved.</center>
+      <div className='flex items-center justify-between px-36'>
+        <p className='text-[#6F6C90] text-lg'>
+          Copyright © 2024 FinSecure
+        </p>
+
+        <p className='text-[#6F6C90] text-lg'>All Rights Reserved | <span className='text-maroon underline'>Terms and Conditions</span> | <span className='text-maroon underline'>Privacy Policy</span></p>
+      </div>
+
     </footer>
   );
 };
