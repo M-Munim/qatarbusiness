@@ -4,38 +4,32 @@
 @tailwind components;
 @tailwind utilities;
 
+
+*{
+  scroll-behavior: smooth;
+}
 body {
   font-family: "DM Sans", serif;
 
 }
 
-/* Container for pagination dots */
 .swiper-pagination {
   bottom: 20px;
-  /* Adjust the position */
   margin-top: 300px;
 }
 
-/* Default state of pagination dots */
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #8A1538 !important;
-  
   opacity: 1;
-  /* Ensure full visibility */
   border-radius: 50%;
   margin: 0 8px;
-  /* Spacing between dots */
   transition: all 0.3s ease;
 }
 
-/* Active pagination dot */
 .swiper-pagination-bullet-active {
   background-color: #8A1538 !important; 
-  /* Custom active color */
   transform: scale(1.2);
-  /* Slightly enlarge the active dot */
   box-shadow: 0 0 10px rgba(139, 27, 45, 0.5);
-  /* Glow effect */
 }

@@ -2,17 +2,12 @@
 
 import Accordion from '@/components/Accordian'
 import Button from '@/components/Button'
-import ContactForm from '@/components/ContactForm'
 import Heading from '@/components/Heading'
-import Navbar from '@/components/Navbar'
 import ServiceCard from '@/components/ServiceCard'
-import Testimonials from '@/components/Testimonial'
 import cardsData, { team } from '@/data'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import { useState } from 'react';
-// import "swiper/swiper-bundle.min.css";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
@@ -53,12 +48,12 @@ const page = () => {
         </div>
       </section>
 
-      <section className="w-full pt-10 pb-20">
+      <section className="w-full pt-10 pb-20"  id="service">
         <Heading text="Our Services" />
         <ServiceCard cards={cardsData} />
       </section>
 
-      <section className="w-full text-center flex items-start justify-center px-4 md:px-8 bg-[#F5F5F5] gap-8">
+      <section className="w-full text-center flex items-start justify-center px-4 md:px-8 bg-[#F5F5F5] gap-8"  id="about">
         <div className='left flex items-center justify-center flex-col py-28 gap-4'>
           <div className='top flex items-center justify-center gap-5'>
             <Image src="/chooseUs1.png" alt="logo" width={100} height={100} className='w-[253px] h-[142px]' />
@@ -85,8 +80,7 @@ const page = () => {
         </div>
       </section>
 
-      {/* under construction */}
-      {/* <section className='w-full'>
+      <section className='w-full'  id="testimonial">
         <Heading text="Testimonial" />
         <div className="testimonial-container pb-32 mt-10 px-4">
           <Swiper
@@ -97,37 +91,7 @@ const page = () => {
             breakpoints={{
               768: { slidesPerView: 5 },
             }}
-          >
-            {testimonials.map((testimonial) => (
-              <SwiperSlide key={testimonial.id}>
-                <div className="testimonial-card bg-[#D3CFFF] bg-opacity-25 w-[275px] h-[324px] rounded-[10px] p-5 mb-14" style={{
-                  boxShadow: 'rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px',
-                }}>
-                  <Image src="/commas.svg" alt="commas" width={100} height={100} className='w-[57px] h-[61px]' />
-                  <div className='flex flex-col items-stretch justify-between  h-56'>
-                    <p className="quote text-xl font-medium text-[#413D45]">{testimonial.text}</p>
-                    <p className="author mt-auto text-[#67646A] font-medium text-[9px]">
-                      {testimonial.name}, {testimonial.location}
-                    </p>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </section> */}
-      <section className='w-full'>
-        <Heading text="Testimonial" />
-        <div className="testimonial-container pb-32 mt-10 px-4">
-          <Swiper
-            modules={[Pagination]}
-            spaceBetween={30}
-            slidesPerView={1}
-            pagination={{ clickable: true }}
-            breakpoints={{
-              768: { slidesPerView: 5 },
-            }}
-            onSlideChange={handleSlideChange} // Listen for slide changes
+            onSlideChange={handleSlideChange}
           >
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={testimonial.id}>
@@ -153,7 +117,6 @@ const page = () => {
           </Swiper>
         </div>
       </section>
-      {/* under construction */}
 
       <section className='bg-maroon pt-5 pb-20'>
         <div className='flex items-center justify-center h-20 mt-5'>
@@ -229,7 +192,7 @@ const page = () => {
       </section>
 
 
-      <section className='w-full bg-maroon h-[695px] flex items-center justify-center mt-10'>
+      <section className='w-full bg-maroon h-[695px] flex items-center justify-center mt-10' id="contact">
         <div className='w-9/12 h-[595px] bg-white rounded-[10px] flex items-center justify-between'>
           <div className='left mx-auto w-6/12 flex items-start justify-center flex-col text-[#413D45]'>
             <h1 className='text-4xl font-bold mb-2'>Lets Connect.</h1>

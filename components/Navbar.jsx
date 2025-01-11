@@ -12,7 +12,6 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
-
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
@@ -28,12 +27,8 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* <div className="sm:8/12 lg:7/12 xl:w-5/12 md:hidden lg:flex lg:items-center lg:justify-start">
-          <h1 className="text-base  lg:text-2xl">Empowering Your Financial Success Globally</h1>
-        </div> */}
-
         {/* Desktop Menu */}
-        <div className="hidden md:flex text-lg items-center gap-7 w-6/12 lg:w-5/12">
+        <div className="hidden md:flex text-lg items-center gap-7 w-6/12">
           <Link
             href="/"
             className={`hover:text-maroon text-[#170F49] transition-all duration-200 ${isActive('/') ? 'text-maroon font-semibold' : ''
@@ -42,28 +37,28 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            href="#"
+            href="#service"
             className={`hover:text-maroon text-[#170F49] transition-all duration-200 ${isActive('/Service') ? 'text-maroon font-semibold' : ''
               }`}
           >
             Services
           </Link>
           <Link
-            href="#"
+            href="#about"
             className={`hover:text-maroon text-[#170F49] transition-all duration-200 ${isActive('/About') ? 'text-maroon font-semibold' : 'font-normal'
               }`}
           >
             About
           </Link>
           <Link
-            href="#"
+            href="#testimonial"
             className={`hover:text-maroon text-[#170F49] transition-all duration-200 ${isActive('/Insights') ? 'text-maroon font-semibold' : ''
               }`}
           >
             Insights
           </Link>
           <Link
-            href="#"
+            href="#contact"
             className={`hover:text-maroon text-[#170F49] transition-all duration-200 ${isActive('/Contact') ? 'text-white font-semibold' : ''
               }`}
           >

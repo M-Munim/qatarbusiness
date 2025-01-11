@@ -35,22 +35,22 @@ const Footer = () => {
         <div className='w-2/12'>
           <p className='mb-6 text-[#170F49] font-bold text-xl'>Product</p>
           <div className='flex items-start justify-center flex-col text-[#6F6C90] text-lg gap-2'>
-            <Link href="/about">Features</Link>
-            <Link href="/about">Pricing</Link>
-            <Link href="/about">Case studies</Link>
-            <Link href="/about">Reviews</Link>
-            <Link href="/about">Updates</Link>
+            <Link href="/">Features</Link>
+            <Link href="/">Pricing</Link>
+            <Link href="/">Case studies</Link>
+            <Link href="/">Reviews</Link>
+            <Link href="/">Updates</Link>
           </div>
         </div>
 
         <div className='w-2/12'>
           <p className='mb-6 text-[#170F49] font-bold text-xl'>Company</p>
           <div className='flex items-start justify-center flex-col text-[#6F6C90] text-lg gap-2'>
-            <Link href="/about">Home</Link>
-            <Link href="/about">Services</Link>
-            <Link href="/about">About</Link>
-            <Link href="/about">Insights</Link>
-            <Link href="/about">Contact Us</Link>
+            <Link href="/">Home</Link>
+            <Link href="#service">Services</Link>
+            <Link href="#about">About</Link>
+            <Link href="#testimonial">Insights</Link>
+            <Link href="#contact">Contact Us</Link>
           </div>
         </div>
 
